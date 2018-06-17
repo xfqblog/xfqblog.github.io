@@ -191,6 +191,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-study">
+          <a href="/study" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            study
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -303,34 +313,14 @@
 
       
         
-          
-            <p>—搭建过程中可能会遇到一些问题，可能都不一样，但请坚持下去，使用百度/谷歌寻找答案！！<br>重要工具：pc，Github，git，node.js<br>第一步 注册安装，准备环境<br>①注册Github<br>登入<br>Build software better, together<br>​github.com<br>图标<br>，选择右上角的sign up<br>然后根据注册要求，一步一步填写，用户名也的取好一点，后面你所建立的博客名也与这用户名类似。邮箱最好填写能用的邮箱，因为注册成功需要邮箱激活！<br>成功的后的样子</p>
-<p>如果你对github有兴趣的话，可以read the guide ,如果觉的英文比较累的话，强推使用谷歌翻译使用。</p>
-<p>点击 New repository，创建一个存储库</p>
-<p>注意Repository name应填写<a href="http://username.github.io。比如我的便是xfqblog.github.io,然后点击Create" target="_blank" rel="noopener">http://username.github.io。比如我的便是xfqblog.github.io,然后点击Create</a> repository。成功后的画面下③④⑤</p>
-<p>②安装git<br>Git for Windows. 国内直接从官网下载比较困难，需要翻墙。这里提供一个国内的下载站，方便网友下载，然后选择安装目录后，一直next，next…………就可以。（只针对小白安装）<br><a href="https://github.com/waylau/git-for-win" target="_blank" rel="noopener">https://github.com/waylau/git-for-win</a><br>​github.com<br>③安装Node.js<br>Node.js<br>​nodejs.org<br>图标<br>然后一直一直next，next………。（只针对小白安装）</p>
-<p>第二步 环境配置<br>①配置SSH<br>安装完成后，在开始菜单里找到“Git”-&gt;“Git Bash”</p>
-<p>填写github的用户名，所注册的邮箱</p>
-<p>②生成ssh密钥<br>首先要检查自己电脑上是否现有的 SSH key：</p>
-<p>说明这是第一次使用git<br>接下来生成ssh key</p>
-<p>敲入：$ ssh-keygen -t rsa -C &amp;amp;amp;quot;邮件地址@youremail.com&amp;amp;amp;quot;（这里的邮箱地址，输入注册 Github 的邮箱地址，&amp;amp;amp;#39;C&amp;amp;amp;#39;为大写）<br>输入后，出现….</p>
-<p>后回车</p>
-<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。</p>
-<p>注：id_rsa文件是私钥，要妥善保管，id_rsa.pub是公钥文件。<br>此时，在用户文件夹（如：C:\Users\阿发）下就会有一个新的文件夹.ssh，里面有刚刚创建的ssh密钥文件id_rsa和id_rsa.pub<br>最后添加公钥到github</p>
-<p>点击用户头像，然后点击显示的Settings(设置)选项；在用户设置栏，点击SSH and GPG keys选项，然后点击New SSH key(新建SSH)按钮；将id_rsa.pub中的内容复制到Key文本框中，然后点击Add SSH key(添加SSH)按钮；</p>
-<p>测试git是否与github连接</p>
-<p>敲入：$ ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br>后敲入:yes.</p>
-<p>出现警告，可以忽视<br>③安装hexo<br>在自己电脑I盘（每个人的各不相同）目录下新建文件夹 blog，按住点击鼠标右键git bash here（或者前敲入：$ mkdir blog ，后$ cd blog）</p>
-<p>然后敲入：$ npm install -g hexo-cli（win10会出现问题）</p>
-<p>确认一下 Node是否 安装正确<br>解决方式：<br>$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a><br>$ cnpm install hexo-cli -g<br>注：目前国内npm源有问题；所以键入如下代码即可安装成功。<br>安装成功后：敲入：$ hexo -v</p>
-<p>表示hexo安装成功<br> 初始化hexo<br>   $ hexo init</p>
-<p>初始化成功<br>安装依赖包<br> $ npm install</p>
-<p>安装成功<br>启动hexo<br>$ hexo server($hexo s)</p>
-<p>第三步 发布到github<br>①关联远程仓库<br>在blog文件夹中使用Notepad++打开_config.yml，溜到最后…….</p>
-<p>修改成：</p>
-<p>来自于：<a href="https://username.com/username/username.github.io" target="_blank" rel="noopener">https://username.com/username/username.github.io</a><br>②安装hexo主题<br>开始使用 - NexT 使用文档<br>​theme-next.iissnan.com<br>图标<br>认真查看……………….<br>③创建文章</p>
-
-          
+          <p>comments:ture<br>type: “study”<br>—搭建过程中可能会遇到一些问题，可能都不一样，但请坚持下去，使用百度/谷歌寻找答案！！<br>重要工具：pc，Github，git，node.js<br><img src="1.png" class="full-image"><br>第一步 注册安装，准备环境<br>①注册Github<br>②安装git<br>③安装Node.js<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/17/第一篇文章/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -447,12 +437,14 @@
 
       
         
-          
-            <p>title: 范例<br>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. </p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-
-          
+          <p>title: 范例<br>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post.<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/17/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
